@@ -4,7 +4,7 @@ import NextLink from "next/link";
 import type { AppProps } from "next/app";
 
 const GlobalNavigation = () => (
-    <Flex h="50px" backgroundColor="gray.700" align="center">
+    <Flex h="3.5rem" backgroundColor="gray.700" align="center">
       <Box p="2">
         <Heading size="md" color="white">Realtime YouTube Live Analyzer</Heading>
       </Box>
