@@ -1,15 +1,15 @@
-import '../styles/globals.css';
+import "../styles/globals.css";
 import { Avatar, Box, Button, ChakraProvider, Flex, Heading, Spacer } from "@chakra-ui/react";
-import type { AppProps } from 'next/app';
+import type { AppProps } from "next/app";
 
 const GlobalNavigation = () => (
-    <Flex h="50px" backgroundColor={'gray.700'} align={'center'}>
-      <Box p={'2'}>
-        <Heading size={'md'} color={'white'}>Realtime YouTube Live Analyzer</Heading>
+    <Flex h="50px" backgroundColor="gray.700" align="center">
+      <Box p="2">
+        <Heading size="md" color="white">Realtime YouTube Live Analyzer</Heading>
       </Box>
       <Spacer />
-      <Box p={'2'}>
-        <Avatar size={'sm'} bg={'teal.400'} />
+      <Box p="2">
+        <Avatar size="sm" bg="teal.400" />
       </Box>
     </Flex>
 );
