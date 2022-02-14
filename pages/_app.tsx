@@ -1,5 +1,6 @@
 import "../styles/globals.css";
-import { Avatar, Box, Button, ChakraProvider, Flex, Heading, Spacer } from "@chakra-ui/react";
+import { Avatar, Box, Button, ChakraProvider, Flex, Heading, Link, Spacer } from "@chakra-ui/react";
+import NextLink from "next/link";
 import type { AppProps } from "next/app";
 
 const GlobalNavigation = () => (
@@ -9,7 +10,11 @@ const GlobalNavigation = () => (
       </Box>
       <Spacer />
       <Box p="2">
-        <Avatar size="sm" bg="teal.400" />
+        <NextLink href="/" passHref>
+          <Link onClick={() => (document.activeElement as HTMLElement).blur()}>
+            <Avatar size="sm" bg="teal.400" />
+          </Link>
+        </NextLink>
       </Box>
     </Flex>
 );
